@@ -62,7 +62,7 @@ public class ContactosCovid {
 			EmsDuplicatePersonException, EmsDuplicateLocationException {
 		// borro información anterior
 		if (reset) {
-			ContactosCovid c = new ContactosCovid();
+			new ContactosCovid();
 		}
 		String datas[] = dividirEntrada(data);
 		for (String linea : datas) {
@@ -105,7 +105,7 @@ public class ContactosCovid {
 			fr = new FileReader(archivo);
 			br = new BufferedReader(fr);
 			if (reset) {
-				ContactosCovid c = new ContactosCovid();
+				new ContactosCovid();
 			} 
 			/**
 			 * Lectura del fichero	línea a línea. Compruebo que cada línea 
